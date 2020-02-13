@@ -4,17 +4,6 @@ import React from 'react';
     id: string
 };  */
 
-interface Cats{
- id:number = 1,
-}
-
-interface Dogs{
-
-}
-
-interface Horses{
-
-}
 
 export default function SectionItem(){
     const imageSrc = 'https://source.unsplash.com/1600x300/?animal,cat';
@@ -47,7 +36,7 @@ const centeredAbsolute: React.CSSProperties = {
     transform: 'translate(-50%, -50%)',
     color: 'white',
     textShadow: '0 0 0.5rem black',
-    fontSize: '8rem'
+    fontSize: '3rem'
 }
 
 const styleSectionItem = {...centeredAbsolute, ...gridItem}
