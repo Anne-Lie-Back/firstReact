@@ -24,7 +24,7 @@ const gridItem: React.CSSProperties = {
 const imageStyle: React.CSSProperties ={
     width: '63%',
     objectFit: 'cover',
-    margin:'1rem'
+    margin:'0.5rem'
 }
 
 const centeredTitle: React.CSSProperties = {
@@ -35,5 +35,5 @@ const centeredTitle: React.CSSProperties = {
     transform: 'translate(-50%, -50%)',
     color: 'white',
     textShadow: '0 0 0.5rem black',
-    fontSize: '3rem'
+    fontSize: '3.2rem'
 }
