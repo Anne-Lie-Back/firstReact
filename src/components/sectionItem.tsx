@@ -4,12 +4,23 @@ import React from 'react';
     id: string
 };  */
 
+interface Cats{
+ id:number = 1,
+}
 
+interface Dogs{
+
+}
+
+interface Horses{
+
+}
 
 export default function SectionItem(){
     const imageSrc = 'https://source.unsplash.com/1600x300/?animal,cat';
    return(
     <div style = {gridItem}>
+        <h2 style = {centeredAbsolute}> CAT </h2>
         <img src = {imageSrc} style={fullscreen}/>
     </div>
    )
@@ -33,7 +44,10 @@ const centeredAbsolute: React.CSSProperties = {
     margin: 0,
     left: '50%',
     top: '50%',
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
+    color: 'white',
+    textShadow: '0 0 0.5rem black',
+    fontSize: '8rem'
 }
 
 const styleSectionItem = {...centeredAbsolute, ...gridItem}
