@@ -1,16 +1,15 @@
 import React from 'react';
 
-/* interface Props { 
-    id: string
-};  */
+ interface Props { 
+    indexImage: string;
+    indexTitle: string;
+}
 
-
-export default function SectionItem(){
-    const imageSrc = 'https://source.unsplash.com/1600x300/?animal,cat';
+export default function SectionItem(props: Props){
    return(
     <div style = {gridItem}>
-        <h2 style = {centeredAbsolute}> CAT </h2>
-        <img src = {imageSrc} style={fullscreen}/>
+        <h2 style = {centeredTitle}> {props.indexTitle}</h2>
+        <img src = {props.indexImage} style={imageStyle}/>
     </div>
    )
 }
@@ -22,13 +21,13 @@ const gridItem: React.CSSProperties = {
     height: '100%'
 }
 
-const fullscreen: React.CSSProperties ={
+const imageStyle: React.CSSProperties ={
     width: '63%',
     objectFit: 'cover',
     margin:'1rem'
 }
 
-const centeredAbsolute: React.CSSProperties = {
+const centeredTitle: React.CSSProperties = {
     position: 'absolute',
     margin: 0,
     left: '50%',
@@ -38,5 +37,3 @@ const centeredAbsolute: React.CSSProperties = {
     textShadow: '0 0 0.5rem black',
     fontSize: '3rem'
 }
-
-const styleSectionItem = {...centeredAbsolute, ...gridItem}

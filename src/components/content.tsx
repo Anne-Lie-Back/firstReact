@@ -4,9 +4,9 @@ import SectionItem from './sectionItem'
 export default function Content(){
     return (
         <div style = {gridContainer}>
-            <SectionItem/>
-            <SectionItem/>
-            <SectionItem/>
+            <SectionItem indexImage = "https://source.unsplash.com/1600x300/?animal,cat" indexTitle = 'CAT'/>
+            <SectionItem indexImage = "https://source.unsplash.com/1600x300/?animal,dog" indexTitle = 'DOG'/>
+            <SectionItem indexImage = "https://source.unsplash.com/1600x300/?animal,horse" indexTitle = 'HORSE'/>
         </div>
     )
 }
